@@ -1,98 +1,12 @@
-# name: manual testing
-
-# on:
-#   push: 
-#     branches: [ "main" ]
-#   pull_request:
-#     branches: [ "main" ]
-
-#   workflow_dispatch:
-
-# jobs:
-#   job1:
-#     runs-on: ubuntu-latest
-
-#     steps:
-#       - uses: actions/checkout@v3
-
-#       - name: Run a one-line script
-#         run: echo this is the line after debugging the code
-
-#       - name: Run a multi-line script
-#         run: |
-#           echo this is first line of multi-line script,
-#           echo this is second line of multi-line script.
-
-
-
-# name: This is manual run 
-
-# on:
-#   push:
-#     branches: [ "main", "master" ]
-#   pull_request:
-#     branches: [ "main", "master"]
-  
-#   workflow_dispatch:
-
-# jobs:
-#   job1:
-#     runs-on: ubantu-latest
-
-#     steps:
-#       - uses: actions/checkout@v3
-        
-#       - name: Run a one-line script
-#         run: echo that code is not working
-      
-#       - name: Run a multi-line script
-#         run: |
-#           echo i want to try this code is working, 
-#           echo properly or not.
-
-
-
-
-
-
-
-# name: CI
-
-# on:
-#   push:
-#     branches: [ "main" ]
-#   pull_request:
-#     branches: [ "main" ]
-
-#   workflow_dispatch:
-
-# jobs:
-#   build:
-#     runs-on: ubuntu-latest
-
-#     steps:
-#       - uses: actions/checkout@v3
-
-#       - name: Run a one-line script
-#         run: echo Hello, world!
-
-#       - name: Run a multi-line script
-#         run: |
-#           echo Add other actions to build,
-#           echo test, and deploy your project.
-  
-
-
-
-name: manual
+name: manual testing
 
 on:
-  push:
-    branches: ["main"]
-  pull_request: 
-    branches: ["main"]
-  workflow_dispatch:
+  push: 
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
+  workflow_dispatch:
 
 jobs:
   job1:
@@ -102,11 +16,12 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Run a one-line script
-        run: echo this is one
+        run: echo this is the line after debugging the code
 
-      - name: Run a multi-line scirpt
+      - name: Run a multi-line script
         run: |
-          echo this is second line
-          echo this is third line
+          echo this is first line of multi-line script,
+          echo this is second line of multi-line script.
+
 
 
