@@ -1,16 +1,16 @@
 name: manual testing
 
 on:
-  push: 
-    branches: [ "main"]
-  pull_request: 
+  push:
+    branches: [ "main" ]
+  pull_request:
     branches: [ "main" ]
 
   workflow_dispatch:
 
 jobs:
-  job1:
-    runs-on: ubantu-latest
+  build:
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v3
