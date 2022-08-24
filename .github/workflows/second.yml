@@ -36,13 +36,13 @@ jobs:
 
   second:
     runs-on: ubuntu-latest
-     steps:
-      - uses: actions/checkout@v3
-      
-      - name: Run a one-line script
-        run: eccho this is one line script due to windows runner
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Run a one-line script
+      run: eccho this is one line script due to windows runner
 
-      - name: Run a multi-line script
-        run: |
-          echo multi line 1
-          ech multi line 2
+    - name: Run a multi-line script
+      run: |
+        echo multi line 1
+        ech multi line 2
