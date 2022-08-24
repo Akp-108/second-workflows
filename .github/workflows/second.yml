@@ -13,12 +13,12 @@ jobs:
   job1:
     runs-on: ubantu-latest
     steps:
-      -uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      -name: Run a one-line script
+      - name: Run a one-line script
         run: echo this is one line scprit
 
-      -name: Run a multi-line secipt
+      - name: Run a multi-line script
         run: |
           echo this is first line of multi-line script,
           echo this is second line of multi-line script.
