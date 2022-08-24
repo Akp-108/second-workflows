@@ -1,24 +1,24 @@
-# name: manual testing
+name: manual testing
 
-# on:
-#   push: 
-#     branches: [ "main"]
-#   pull_request: 
-#     branches: [ "main" ]
+on:
+  push: 
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
-#   workflow_dispatch:
+  workflow_dispatch:
 
-# jobs:
-#   job1:
-#     runs-on: ubantu-latest
+jobs:
+  build:
+    runs-on: ubuntu-latest
 
-#     steps:
-#       - uses: actions/checkout@v3
+    steps:
+      - uses: actions/checkout@v3
 
-#       - name: Run a one-line script
-#         run: echo this is one line scprit
+      - name: Run a one-line script
+        run: echo this is one line scprit
 
-#       - name: Run a multi-line script
-#         run: |
-#           echo this is first line of multi-line script,
-#           echo this is second line of multi-line script.
+      - name: Run a multi-line script
+        run: |
+          echo this is first line of multi-line script,
+          echo this is second line of multi-line script.
