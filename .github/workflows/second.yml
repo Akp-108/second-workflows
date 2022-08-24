@@ -23,7 +23,7 @@ jobs:
           echo this is multi line script line two 
 
   second:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
      steps:
       - uses: actions/checkeout@v3
       
