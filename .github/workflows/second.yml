@@ -46,5 +46,5 @@ jobs:
 
     - name: Run a multi-line script
       run: |
-        echo multi line 1
-        echo multi line 2
+        echo multi line 1 - $name
+        echo multi line 2 - $name
