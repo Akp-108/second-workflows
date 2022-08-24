@@ -1,0 +1,30 @@
+
+name: manual testing
+
+on:
+  push: 
+    branches: [ "main", "master"]
+  pull_request: 
+    branches: [ "main", "master"]
+
+  workflow_dispatch:
+
+jobs:
+  job1:
+    runs-on: ubantu-latest
+    steps:
+      -uses: actions/checkout@v3
+
+      -uses: Run a one-line script
+        run: echo this is one line scprit
+
+      -uses: Run a multi-line secipt
+        run: |
+          echo this is first line of multi-line script,
+          echo this is second line of multi-line script.
+  
+  
+
+
+
+
