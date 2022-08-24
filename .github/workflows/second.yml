@@ -7,6 +7,8 @@ on:
     branches: ["main", "master"]
   workflow_dispatch:
 
+env:
+  name: atul kumar pandey
 
 jobs:
   first:
@@ -38,11 +40,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    
-      env: this is atul kumar pandey
 
     - name: Run a one-line script
-      run: echo this is one line script due to windows runner $env
+      run: echo $name
 
     - name: Run a multi-line script
       run: |
