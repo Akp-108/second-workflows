@@ -99,12 +99,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      -uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      -name: Run a one-line script
+      - name: Run a one-line script
         run: echo this is one
 
-      -name: Run a multi-line scirpt
+      - name: Run a multi-line scirpt
         run: |
           echo this is second line
           echo this is third line
