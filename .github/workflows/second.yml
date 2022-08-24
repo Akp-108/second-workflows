@@ -21,3 +21,16 @@ jobs:
         run: |
           echo this is multi line script line one
           echo this is multi line script line two 
+
+  second:
+    runs-on: windows-latest
+     steps:
+      - uses: actions/checkeout@v3
+      
+      - name: Run a one-line script
+        run: eccho this is one line script due to windows runner
+
+      - name: Run a multi-line script
+        run: |
+          echo multi line 1
+          ech multi line 2
