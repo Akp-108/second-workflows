@@ -43,12 +43,12 @@ jobs:
       - uses: actions/checkout@v3
         
       - name: Run a one-line script
-        run: echo this is the one line script
+        run: echo that code is not working
       
       - name: Run a multi-line script
         run: |
-          echo this is first line of script
-          echo this is the second line of script
+          echo i want to try this code is working, 
+          echo properly or not.
 
 
 
